@@ -1,6 +1,6 @@
 # Muhammad Shaheryar — Portfolio
 
-A responsive portfolio website built with HTML, CSS and JavaScript for the Microsoft Front-End Development course (with help from Microsoft Copilot).
+A responsive portfolio website built with HTML, CSS and JavaScript for the Microsoft Front-End Development course.
 
 **Live site:** https://YOUR-USERNAME.github.io/portfolio/
 
