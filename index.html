@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Shaheryar is a front-end and WordPress developer who builds fast, accessible websites for small businesses.">
+  <title>Muhammad Shaheryar | Web Developer</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Muhammad Shaheryar, back to top">
+        <img src="images/favicon.svg" alt="" width="32" height="32">
+        <span>Shaheryar</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">I build websites that load fast and work for everyone.</h1>
+          <p class="lead">
+            I'm Muhammad Shaheryar, a front-end developer in Pakistan. I make WordPress,
+            Shopify and hand-coded sites for small businesses, with clean HTML underneath.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">See my work</a>
+            <a class="button button-ghost" href="#contact">Start a project</a>
+          </div>
+        </div>
+
+        <aside class="inspector-card" aria-labelledby="inspector-title">
+          <h2 id="inspector-title" class="inspector-title">Look under the hood</h2>
+          <p>Turn this on to outline every element on the page with its HTML tag.</p>
+          <label class="switch">
+            <input type="checkbox" id="markup-toggle" role="switch" aria-describedby="markup-status">
+            <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+            <span class="switch-label">Show the markup</span>
+          </label>
+          <p id="markup-status" class="inspector-status" aria-live="polite">Markup hidden</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="work-title">Selected work</h2>
+          <div class="filters" role="group" aria-label="Filter projects by platform">
+            <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-filter="wordpress" aria-pressed="false">WordPress</button>
+            <button type="button" class="filter" data-filter="shopify" aria-pressed="false">Shopify</button>
+            <button type="button" class="filter" data-filter="code" aria-pressed="false">Hand-coded</button>
+          </div>
+        </div>
+
+        <ul class="project-list">
+          <li class="project" data-category="wordpress">
+            <figure class="project-media">
+              <img src="images/project-clinic.svg" width="640" height="420" loading="lazy"
+                   alt="Clinic website homepage with a booking form beside a list of doctors and opening hours">
+            </figure>
+            <div class="project-body">
+              <h3>Clinic booking site</h3>
+              <p>A WordPress site where patients pick a doctor and book a time slot without calling the front desk.</p>
+              <ul class="tags" aria-label="Tools used">
+                <li>WordPress</li><li>Elementor</li><li>Booking plugin</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project" data-category="shopify">
+            <figure class="project-media">
+              <img src="images/project-store.svg" width="640" height="420" loading="lazy"
+                   alt="Clothing store product page showing a shirt, size buttons and an add to cart button">
+            </figure>
+            <div class="project-body">
+              <h3>Clothing store</h3>
+              <p>A Shopify theme rebuild that cut the product page load time in half and made sizing clearer on phones.</p>
+              <ul class="tags" aria-label="Tools used">
+                <li>Shopify</li><li>Liquid</li><li>Speed tuning</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project" data-category="code">
+            <figure class="project-media">
+              <img src="images/project-inventory.svg" width="640" height="420" loading="lazy"
+                   alt="Inventory dashboard with a bar chart of stock levels and a table of low stock items">
+            </figure>
+            <div class="project-body">
+              <h3>Inventory dashboard</h3>
+              <p>A small hand-coded tool that shows a shop owner which items are running low, built with plain HTML, CSS and JavaScript.</p>
+              <ul class="tags" aria-label="Tools used">
+                <li>HTML</li><li>CSS Grid</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="project" data-category="code">
+            <figure class="project-media">
+              <img src="images/project-landing.svg" width="640" height="420" loading="lazy"
+                   alt="Agency landing page with a large headline, three service blocks and a contact button">
+            </figure>
+            <div class="project-body">
+              <h3>Agency landing page</h3>
+              <p>A one-page site for a marketing agency, responsive from small phones to wide monitors.</p>
+              <ul class="tags" aria-label="Tools used">
+                <li>HTML</li><li>CSS</li><li>Responsive design</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <p class="filter-empty" hidden>No projects match this filter yet.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">What I can do for you</h2>
+        <dl class="services">
+          <div class="service">
+            <dt>New websites</dt>
+            <dd>Business sites on WordPress or hand-coded, designed to be easy for you to update.</dd>
+          </div>
+          <div class="service">
+            <dt>Online stores</dt>
+            <dd>Shopify and WooCommerce stores with clear product pages and a simple checkout.</dd>
+          </div>
+          <div class="service">
+            <dt>Speed and fixes</dt>
+            <dd>Finding what makes a site slow or broken, and fixing it without a full rebuild.</dd>
+          </div>
+          <div class="service">
+            <dt>Accessibility</dt>
+            <dd>Alt text, keyboard navigation and colour contrast, so more people can use your site.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="portrait">
+          <img src="images/portrait.svg" width="320" height="320" loading="lazy"
+               alt="Illustrated portrait of Muhammad Shaheryar working at a laptop">
+        </figure>
+        <div class="about-text">
+          <h2 id="about-title">About me</h2>
+          <p>
+            I started with practice pages on flexbox and grid, and now I build full sites for clients.
+            I care about the parts most people never see: tidy markup, images with real descriptions,
+            and pages that still work when someone uses only a keyboard.
+          </p>
+          <p>
+            This portfolio was written with help from Microsoft Copilot as part of a front-end
+            development course, then tested and refined by hand.
+          </p>
+          <h3>Tools I use every week</h3>
+          <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>WordPress</li>
+            <li>Shopify</li>
+            <li>Framer</li>
+            <li>Figma</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title">Start a project</h2>
+          <p>Tell me what you need and I'll reply within two working days.</p>
+          <p>
+            Prefer email?
+            <a href="mailto:muhammadshaheryar408@gmail.com">muhammadshaheryar408@gmail.com</a>
+          </p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="field-error" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="field-error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message">What do you need?</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-hint message-error"></textarea>
+            <p class="field-hint" id="message-hint"><span id="char-count">0</span> / 20 characters minimum</p>
+            <p class="field-error" id="message-error" aria-live="polite"></p>
+          </div>
+          <button class="button button-primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Muhammad Shaheryar</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
