@@ -2,7 +2,7 @@
 
 A responsive portfolio website built with HTML, CSS and JavaScript for the Microsoft Front-End Development course.
 
-**Live site:** https://YOUR-USERNAME.github.io/portfolio/
+**Live site:** https://shaheryar-8.github.io/portfolio/
 
 ## What's inside
 
